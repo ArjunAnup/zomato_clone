@@ -8,9 +8,10 @@ body{
 
 header{
     width: 100%;
-    height: 60vh;
     overflow: hidden;
     position: relative;
+    height: 462px;
+
     object-fit: cover;
 }
 .header-backpic{
@@ -18,17 +19,17 @@ header{
     position: absolute;
     top: -20vh;
     z-index: -1;
+    height: 462px;
 }
 .header-backpic img{
     position: relative;
     top: 0px;
     left: 0px;
-    height: 100%;
     width: 100%;
     object-fit: cover;
-    transform: scale(1.2);
     opacity: 1;
     transition: 1.4s;
+    height: 860px;
 }
 .nav{
     display: flex;
@@ -63,6 +64,7 @@ header{
 }
 .logo{
     width: 18.5vw;
+    height: 100%;
     object-fit: contain;
     margin-top: 40px;
 }
@@ -78,7 +80,7 @@ header{
 }
 .search{
     display: flex;
-    width: 55vw;
+    width: 50%;
     align-items: center;
     justify-content: stretch;
     border-radius: 10px;
@@ -99,7 +101,7 @@ header{
     border-right: 1px solid gray;
     font-family: Okra, Helvetica, sans-serif;
     font-size: 15px;
-    padding-right: 10px;
+    padding-right: 150px;
 }
 .search i:first-child{
     font-size: 20px;
@@ -109,40 +111,47 @@ header{
 }
 .search i{
     color: gray;
-    padding-left: 10px;
+    padding-left: 20px;
 
 }
 .sec-1{
     display: flex;
     justify-content: center;
     margin-top: 40px;
+    margin-bottom: 100px;
     width: max-content;
     width: 100%;
     height: 100%;
+    max-width: 1100px;
+    margin: 0 auto;
+    gap: 10px;
 }
 .full{
     position: relative;
-    max-width: 1100px;
-    max-height: initial;
-    margin: 0 auto;
-
-    
+    max-height: initial;  
+    margin-top: 35px;
 }
 .box{
     position: relative;
-    width: 550px;
-    height: 400px;
+    width: 100%;
+    height: 240px;
     margin: 3px 5px;
     overflow: hidden;
     border-radius: 15px;
-    box-shadow: 0 1px 2px rgb(240, 233, 233);
-    background-color: rgb(243,240,240);
 
+}
+.white span{
+    margin-left: 20px;
+    
+}
+.box img{
+    width: 100%;
+    height: 100%;
 }
 
 .white{
     position: absolute;
-    bottom: 3px;
+    bottom: 0px;
     align-items: center;
     border-radius: 0 0 15px 15px;
     background-color: white;
@@ -162,7 +171,14 @@ header{
 }
 .middle{
     margin:60px 0px;
+    max-width: 1100px;
+    margin: 0 auto;
 
+}
+.collection{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 30px;
 }
 .sec-2 h2{
     font-size: 2.3rem;
@@ -176,7 +192,7 @@ header{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin-bottom: 30px;
+    margin-bottom: 30px;    
 } 
 .sec-2 h4{
     margin: 0;
@@ -187,7 +203,7 @@ header{
     color: rgb(99,98,98);
  } 
  .fa-caret-right, .sec-2 span{
-     color: rgb(248, 117, 117);
+     color: rgb(255, 92, 92);
      
     
  }
@@ -195,10 +211,7 @@ header{
     height: 350px;                              
     overflow: hidden;
     position: relative;
-    border-radius: 10px;
-   
-    
-   
+    border-radius: 10px; 
 
  }
  .box-1 div{
@@ -214,15 +227,17 @@ header{
     display: inline-block;
     color: white;
     padding-left: 15px;
-    font-size: 1rem;
+    font-size: 18px;
     padding-bottom: 15px;
+    white-space: nowrap;
 
  }
  .box-1 i{
     color: white;
     padding-bottom: 15px;
     margin-right: 10rem;
-
+    
+    
  }
  .box-1 img{
     height: 350px;                                                     /*4 images */
@@ -238,6 +253,8 @@ header{
     margin-bottom: 130px;
     gap: 7.5px;
     justify-content: center;
+    max-width: 1100px;
+    margin: 0 auto;
     
     
 }
@@ -245,27 +262,25 @@ header{
     font-size: 2.1rem;
     font-weight: lighter;
     text-align:left;
-    color:rgb(46, 45, 45)
+    color:rgb(46, 45, 45);
+    margin-top: 120px;
+
 }
 .sec-4{
     display: grid;
-    justify-content: center;
+    justify-content:space-between;
     grid-column-gap: 15px;
     grid-row-gap: 20px;
-    grid-template-columns: 340px 340px 340px;
-    align-items: center;
-    grid-template: auto;
-    
+    grid-template-columns: 380px 380px 380px;
+ 
 }
 .box-2{
     border: 1px solid rgb(235, 233, 233);
     box-shadow:0 1px 1px rgb(226, 233, 233);
-    
-    
     overflow: hidden;
     border-radius: 10px;
 }
-    
+ 
 .box-2 div{
     overflow: hidden;
     display: flex;
@@ -276,6 +291,7 @@ header{
 
 }
 .sec-5{
+    width: 100%;
     display: flex;
     margin: 120px 0;
     padding: 40px;
@@ -286,15 +302,19 @@ header{
 .flex{
     display: flex;
 }
-img{
+.footer{
+    
+    object-fit: cover;
     width: 100%;
-    height: 80%;   
+    
 }
 
 .contact{
     width: 100%;
     overflow: hidden;
     max-width: 900px;
+    margin: 0 auto;
+    max-width: 1100px;
     margin: 0 auto;
 }
 .contact img{
@@ -407,6 +427,8 @@ img{
     font-weight: lighter;
     text-align:left;
     margin-left: 15rem;
+    margin-right: 70px;
+    margin-top: -70px;
     color:rgb(46, 45, 45)
 
 }
@@ -414,9 +436,14 @@ img{
     width: 0px;
     height: 0px;
 }
+footer{
+    background-color:rgb(248, 248, 248)
+}
 .sec-7{
-    padding: 40px, 120px; 
-    background-color: rgb(244, 244, 253);
+    
+    max-width: 1100px;
+    margin: 0 auto;
+    margin-top: 100px;
 }
 .first{
     display: flex;
@@ -431,6 +458,7 @@ img{
     border-radius: 5px;
     margin-right: 20px;
     font-weight: 400;
+    
 }
 .second{
     display: flex;
